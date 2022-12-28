@@ -1,0 +1,25 @@
+.home-container {
+    padding: 27px 40px;
+}
+
+.home-content h2 {
+    font-size: 48px;
+    display: flex;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+}
+
+.home-content p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #7E7E7E;
+    font-weight: 700px;
+    letter-spacing: 0.02em;
+    margin-bottom: 27px;
+}
+.start-button {
+    font-size: 16px;
+    color: #ffffff;
+    border-radius: 4px;
+    background-color: #1890FF;
+}
