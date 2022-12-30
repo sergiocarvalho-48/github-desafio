@@ -7,7 +7,6 @@
     border-radius: 4px;
     margin-bottom: 5px;
     border: 1px solid #D9D9D9;
-
 }
 
 .profile-title {
@@ -20,9 +19,17 @@
 }
 
 .profile-description {
-
   display:inline;
   color: #737373;
   font-size: 16px;
   font-style: normal;
 }
+
+.profile-descriptionUrl {
+  display:inline;
+  color: #0029FF;
+  font-size: 16px;
+  font-style:normal;
+  font-weight: 500;
+}
+

@@ -7,7 +7,6 @@
   margin-bottom: 126px;
 }
 
-
 .search-container h1 {
   display: flex;
   font-weight: 500;
@@ -21,7 +20,6 @@
 .search-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   padding: 30px 40px;
   background-color: #E6F7FF;
   border-radius: 16px;
@@ -43,16 +41,19 @@
   border: 0px white;
 }
 
+.avatar-container {
+  display: flex;
+  width: 247px;
+  height: 247px;
+}
 
 .card-profile {
   display: flex;
   background-color: #FFFFFF;
-  width: 902px;
-  height: 247px;
+  width: 100%;
   margin-left: 29px;
   border-radius: 6px;
   border: 1px solid #D9D9D9;
-
 }
 
 .card-profile h5 {
@@ -65,7 +66,6 @@
   margin-bottom: 19px;
 }
 
-
 .form-container {
   display: flex;
   flex-direction: column;
@@ -77,7 +77,6 @@
   background-color: #FFFFFF;
   border: 1px solid #D9D9D9;
   border-radius: 4px;
-  font-size: 16px;
   height: 40px;
   width: 298px;
   padding-left: 17px;
@@ -85,15 +84,21 @@
 }
 
 .search-input::placeholder {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
   color: #BFBFBF;
 }
 
 .search-button {
+  display: flex;
+  padding: 5px 16px;
+  font-size: 16px;
+  font-weight: 400;
   height: 40px;
   width: 101px;
   margin-bottom: 27px;
   color: #ffffff;
   border-radius: 4px;
 }
-
-
