@@ -2,15 +2,13 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 0px 99px 0px 90px;
-  margin-top: 54px;
+  padding: 10px;
+  margin-top: 44px;
   margin-bottom: 126px;
 }
 
 .search-container h1 {
   display: flex;
-  font-weight: 500;
-  font-size: 38px;
   text-align: left;
   color: #262626;
   margin-bottom: 12px;
@@ -20,50 +18,47 @@
 .search-container {
   display: flex;
   flex-direction: column;
-  padding: 30px 40px;
   background-color: #E6F7FF;
   border-radius: 16px;
-
-}
-
-.card-container {
-  display: flex;
-  margin-top: 54px;
+  margin-bottom: 2px;
 }
 
 .card-content {
   display: flex;
-  flex-direction: row;
-  padding: 43px 35px 44px 38px;
-  width: 100%;
-  background-color: #F5F5F5;
-  border-radius: 8px;
-  border: 0px white;
-}
-
-.avatar-container {
-  display: flex;
-  width: 247px;
-  height: 247px;
+  flex-direction: column;
+  background-color: #Ffffff;
+  border-radius: 6px;
+  border: 1px solid #D9D9D9;
+  margin-bottom: 10px;
 }
 
 .card-profile {
   display: flex;
-  background-color: #FFFFFF;
-  width: 100%;
-  margin-left: 29px;
-  border-radius: 6px;
-  border: 1px solid #D9D9D9;
+  flex-direction: column;
+  margin-top: 54px;
+  background-color: #F5F5F5;
+  border-radius: 8px;
+  margin-bottom: 5px;
 }
 
-.card-profile h5 {
-  display: flex;
+.avatar-profile {
+  text-align: center;
+}
+
+.avatar-profile img {
+  padding: 10px;
+  text-align: center;
+  width: 247px;
+  height: 247px;
+}
+
+.card-content h5 {
+  text-align: center;
   font-size: 20px;
   font-weight: 500;
-  width: 534px;
   padding: 8px 0px 0px 14px;
   color: #1890FF;
-  margin-bottom: 19px;
+  margin-bottom: 15px;
 }
 
 .form-container {
@@ -77,10 +72,10 @@
   background-color: #FFFFFF;
   border: 1px solid #D9D9D9;
   border-radius: 4px;
-  height: 40px;
-  width: 298px;
   padding-left: 17px;
   margin-bottom: 25px;
+  font-weight: 400;
+  color: #5C5858;
 }
 
 .search-input::placeholder {
@@ -101,4 +96,70 @@
   margin-bottom: 27px;
   color: #ffffff;
   border-radius: 4px;
+}
+
+@media (min-width: 576px) {
+  .search-container h1 {
+    font-size: 38px;
+    font-weight: 500;
+  }
+
+  .search-input {
+    width: 298px;
+    height: 40px;
+  }
+
+  .card-content h5 {
+    text-align: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .profile-search-container {
+    padding: 24px 90px 0px 90px;
+  }
+
+  .search-container {
+    margin-bottom: 10px;
+  }
+
+  .search-container h1 {
+    margin-top: 54px;
+    margin-left: 31px;
+  }
+
+  .search-input {
+    margin-left: 31px;
+  }
+
+  .search-button {
+    margin-left: 31px;
+    margin-bottom: 74px;
+  }
+
+  .card-profile {
+    flex-direction: row;
+  }
+
+  .card-content {
+    width: 902px;
+    height: 249px;
+    margin-top: 43px;
+    margin-right: 25px;
+    margin-left: 29px;
+  }
+
+  .card-content h5 {
+    margin-top: 5px;
+  }
+
+  .avatar-profile {
+    display: flex;
+    padding: 45px 0px 45px 30px;
+  }
+
+  .avatar-profile img {
+    padding: 0px;
+    display: flex;
+  }
 }

@@ -66,18 +66,16 @@ const ProfileGit = () => {
         </form>
       </div>
       {profile && (
-        <div className="card-container">
-          <div className="card card-content">
-            <div className="avatar-container">
-              <img src={profile.avatar_url} alt="Avatar" />
-            </div>
-            <div className="card card-profile">
-              <h5>Informações</h5>
-              <ProfileCard title="Perfil" description={''} descriptionUrl={profile.url} />
-              <ProfileCard title="Seguidores" description={profile.followers} descriptionUrl={''} />
-              <ProfileCard title="Localidade" description={profile.location} descriptionUrl={''} />
-              <ProfileCard title="Nome" description={profile.name} descriptionUrl={''} />
-            </div>
+        <div className="container card-profile">
+          <div className="avatar-profile">
+            <img src={profile.avatar_url} alt="Avatar" />
+          </div>
+          <div className="card-content">
+            <h5>Informações</h5>
+            <ProfileCard title="Perfil" description={''} descriptionUrl={profile.url} />
+            <ProfileCard title="Seguidores" description={profile.followers} descriptionUrl={''} />
+            <ProfileCard title="Localidade" description={profile.location} descriptionUrl={''} />
+            <ProfileCard title="Nome" description={profile.name} descriptionUrl={''} />
           </div>
         </div>
       )}

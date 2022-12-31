@@ -6,13 +6,13 @@ type Props = {
     descriptionUrl: string;
 }
 
-const ProfileCard = ( { title, description, descriptionUrl} : Props) => {
+const ProfileCard = ({ title, description, descriptionUrl }: Props) => {
 
     return (
         <div className="profile-container">
             <h3 className="profile-title">{title}:</h3>
             <p className="profile-description">{description}</p>
-            <p className="profile-descriptionUrl">{descriptionUrl}</p> 
+            <p className="profile-descriptionUrl">{descriptionUrl}</p>
         </div>
     );
 }
